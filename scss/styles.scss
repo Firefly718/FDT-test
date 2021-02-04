@@ -194,3 +194,60 @@ body {
         }
     }
 }
+// ------------------------------------------------- ABOUT
+.about {
+    height: 74rem;
+    background-color: #fff;
+    &__wrap {
+        height: 74rem;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15rem;
+        // margin-top: 15rem;
+    }
+    &__img {
+        width: 48%;
+        height: 90%;
+        background-image: url(../img/lawyer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__text {
+        width: 48%;
+        &--title {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: #404040;
+            text-transform: uppercase;
+            line-height: 3rem;
+            margin-bottom: 3.4rem;
+        }
+        &--desc {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem;
+            color: #151515;
+            font-weight: 250;
+            margin-bottom: 5rem;
+        }
+        &--subtitle {
+            font-size: 2.1rem;
+            color: #404040;
+            font-family: "Playfair Display";
+            text-transform: uppercase;
+            margin-bottom: 2.7rem;
+            color: #404040;
+        }
+        &--button {
+            @include linkClear;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: $brandColor;
+            width: 20.8rem;
+            display: block;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+}

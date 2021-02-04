@@ -569,3 +569,56 @@ body {
       line-height: 3rem;
       border: none;
       cursor: pointer; }
+
+.about {
+  height: 74rem;
+  background-color: #fff; }
+  .about__wrap {
+    height: 74rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 15rem; }
+  .about__img {
+    width: 48%;
+    height: 90%;
+    background-image: url(../img/lawyer.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .about__text {
+    width: 48%; }
+    .about__text--title {
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: #404040;
+      text-transform: uppercase;
+      line-height: 3rem;
+      margin-bottom: 3.4rem; }
+    .about__text--desc {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.8rem;
+      color: #151515;
+      font-weight: 250;
+      margin-bottom: 5rem; }
+    .about__text--subtitle {
+      font-size: 2.1rem;
+      color: #404040;
+      font-family: "Playfair Display";
+      text-transform: uppercase;
+      margin-bottom: 2.7rem;
+      color: #404040; }
+    .about__text--button {
+      color: #000;
+      text-decoration: none;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      background-color: #0d2e69;
+      width: 20.8rem;
+      display: block;
+      text-align: center;
+      padding: 1rem 0; }
