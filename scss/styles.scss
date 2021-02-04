@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @import 'normalize',
         'mixins',
@@ -15,11 +15,75 @@ html {
 
 body {
     min-height: 100%;
-    font: 1.5rem/1.6 'Open Sans', sans-serif;
+    font: 1.5rem/1.6 'Roboto', sans-serif;
+    background-color: gray;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1140px;
     width: 96%;
+}
+
+// ------------------------------------------- HEADER
+.header {
+    height: 11.8rem;
+    background-color: #fff;
+    border-bottom: 2px solid #4c4c4c;
+    text-transform: uppercase;
+    color: $brandColor;
+    // outline: 2px solid red;
+    &__wrap {
+        @include flexCenter;
+        justify-content: space-between;
+        height: 11.8rem;
+        // outline: 2px solid orangered;
+    }
+    &__logo {
+        font-weight: bold;
+        font-size: 3.6rem;
+        border: 2px solid $brandColor;
+        width: 17rem;
+        text-align: center;
+        height: 8rem;
+        @include flexCenter;
+        @include linkClear;
+        color: $brandColor;
+    }
+    &__menu {
+        width: 57rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // outline: 2px solid red;
+    }
+    &__phone {
+        width: 33.2rem;
+        display: flex;
+        margin-bottom: 2rem;
+        // outline: 2px solid blue;
+        &--text {
+            width: 40%;
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+            // outline: 2px solid green;
+        }
+        &--num {
+            font-size: 3.2rem;
+            line-height: 2.7rem;
+            font-weight: bold;
+            @include linkClear;
+            color: $brandColor;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &--item {
+            @include linkClear;
+            color: $brandColor;
+        }
+        // outline: 2px solid orange;
+    }
 }

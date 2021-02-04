@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -318,9 +318,91 @@ html {
 
 body {
   min-height: 100%;
-  font: 1.5rem/1.6 'Open Sans', sans-serif; }
+  font: 1.5rem/1.6 'Roboto', sans-serif;
+  background-color: gray; }
 
 .container {
   margin: 0 auto;
   max-width: 1140px;
   width: 96%; }
+
+.header {
+  height: 11.8rem;
+  background-color: #fff;
+  border-bottom: 2px solid #4c4c4c;
+  text-transform: uppercase;
+  color: #0d2e69; }
+  .header__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 11.8rem; }
+  .header__logo {
+    font-weight: bold;
+    font-size: 3.6rem;
+    border: 2px solid #0d2e69;
+    width: 17rem;
+    text-align: center;
+    height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    color: #0d2e69; }
+  .header__menu {
+    width: 57rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .header__phone {
+    width: 33.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem; }
+    .header__phone--text {
+      width: 40%;
+      font-size: 1.4rem;
+      line-height: 1.5rem; }
+    .header__phone--num {
+      font-size: 3.2rem;
+      line-height: 2.7rem;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      color: #0d2e69; }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%; }
+    .header__nav--item {
+      color: #000;
+      text-decoration: none;
+      color: #0d2e69; }
