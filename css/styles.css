@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -406,3 +407,165 @@ body {
       color: #000;
       text-decoration: none;
       color: #0d2e69; }
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bg-main.png);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-main.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-main.png);
+  height: 86.2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
+  .banner__wrap {
+    height: 86.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .banner__title {
+    font-family: 'Playfair Display', serif;
+    width: 55rem; }
+    .banner__title--text {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 3rem; }
+      .banner__title--text::after {
+        content: 'BURN INJURY LAWYER';
+        font-size: 5rem;
+        display: block;
+        line-height: 2.7rem;
+        margin-top: 1rem; }
+    .banner__title--button {
+      display: block;
+      width: 36rem;
+      height: 5rem;
+      background-color: #0d2e69;
+      color: #000;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 3.5rem;
+      text-align: center; }
+  .banner__form {
+    width: 46rem;
+    background-color: #0d2e69;
+    padding: 4rem 3rem; }
+    .banner__form--title {
+      font-size: 2.8rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+      .banner__form--title::after {
+        content: 'Fill out the form below for your free case evaluation';
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 1.8rem;
+        text-transform: none;
+        margin-bottom: 4rem; }
+    .banner__form--name {
+      border: 1px solid #fff;
+      background-color: transparent;
+      line-height: 3rem;
+      text-transform: capitalize;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      color: #fff; }
+      .banner__form--name::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--name::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--name:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--name::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--name::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    .banner__form--mail {
+      border: 1px solid #fff;
+      background-color: transparent;
+      line-height: 3rem;
+      text-transform: capitalize;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      color: #fff; }
+      .banner__form--mail::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--mail::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--mail:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--mail::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--mail::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    .banner__form--phone {
+      border: 1px solid #fff;
+      background-color: transparent;
+      line-height: 3rem;
+      text-transform: capitalize;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      color: #fff; }
+      .banner__form--phone::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--phone::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--phone:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--phone::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--phone::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    .banner__form--text {
+      border: 1px solid #fff;
+      background-color: transparent;
+      line-height: 3rem;
+      text-transform: capitalize;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      color: #fff;
+      height: 12rem;
+      width: 100%;
+      resize: none; }
+      .banner__form--text::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--text::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--text:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--text::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .banner__form--text::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    .banner__form--button {
+      text-transform: uppercase;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      height: 5.5rem;
+      background-color: #fff;
+      color: #0d2e69;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: 3rem;
+      border: none;
+      cursor: pointer; }
