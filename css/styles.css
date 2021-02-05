@@ -315,7 +315,8 @@ template {
 
 html {
   height: 100%;
-  font-size: 10px; }
+  font-size: 10px;
+  scroll-behavior: smooth; }
 
 body {
   min-height: 100%;
@@ -366,6 +367,10 @@ body {
     color: #000;
     text-decoration: none;
     color: #0d2e69; }
+    .header__logo--second {
+      color: #000;
+      border: 1px solid #000;
+      font-weight: normal; }
   .header__menu {
     width: 57rem;
     display: -webkit-box;
