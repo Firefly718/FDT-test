@@ -36,3 +36,11 @@
         color: rgba(255, 255, 255, .5);
     }
 }
+
+@mixin title {
+    font-size: 2rem;
+    color: #404040;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
