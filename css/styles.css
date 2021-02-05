@@ -706,3 +706,48 @@ body {
     text-align: center;
     height: 15rem;
     font-size: 1.8rem; }
+
+.news {
+  height: 74rem;
+  background-color: #fff; }
+  .news__title {
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    color: #404040;
+    text-align: center;
+    padding: 7rem 1rem 8rem 1rem;
+    text-transform: uppercase; }
+  .news__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .news__item {
+    width: 31%;
+    height: 43rem;
+    display: block;
+    color: #000;
+    text-decoration: none; }
+    .news__item--img {
+      background-image: url(../img/pic.png);
+      width: 100%;
+      height: 50%; }
+    .news__item--title {
+      font-size: 2rem;
+      color: #404040;
+      font-family: 'Playfair Display', serif;
+      text-transform: uppercase;
+      margin: 2rem 0; }
+    .news__item--desc {
+      font-size: 1.8rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 250;
+      color: #404040; }
+    .news__item--more {
+      font-size: 1.8rem;
+      color: #0d2e69;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }

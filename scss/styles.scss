@@ -331,3 +331,52 @@ body {
         }
     }
 }
+// -------------------------------------------------- NEWS
+.news {
+    height: 74rem;
+    background-color: #fff;
+    &__title {
+        font-size: 5rem;
+        font-family: 'Playfair Display', serif;
+        color: #404040;
+        text-align: center;
+        padding: 7rem 1rem 8rem 1rem;
+        text-transform: uppercase;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 31%;
+        // outline: 2px solid red;
+        height: 43rem;
+        display: block;
+        @include linkClear;
+        &--img {
+            background-image: url(../img/pic.png);
+            width: 100%;
+            height: 50%;
+        }
+        &--title {
+            font-size: 2rem;
+            color: #404040;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            margin: 2rem 0;
+        }
+        &--desc {
+            font-size: 1.8rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 250;
+            color: #404040;
+        }
+        &--more {
+            font-size: 1.8rem;
+            color: $brandColor;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
