@@ -251,3 +251,83 @@ body {
         }
     }
 }
+// ------------------------------------------------ CALL
+.call {
+    background-color: $brandColor;
+    height: 25rem;
+    color: #fff;
+    &__wrap {
+        @include flexCenter;
+        flex-direction: column;
+        height: 25rem;
+        font-size: 4rem;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__tel {
+        @include linkClear;
+        color: #fff;
+    }
+}
+// ----------------------------------------------- TESTIMONIALS
+.comments {
+    height: 50rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+    url(../img/bg-sec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    &__title {
+        font-size: 5rem;
+        font-family: 'Playfair Display' ,serif;
+        text-align: center;
+        padding: 9rem 1rem 7rem 1rem;
+    }
+    &__slider {
+        width: 100%;
+        height: 20rem;
+        // outline: 2px solid red;
+        &--left {
+            // outline: 2px solid red;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $brandColor;
+            border-radius: 5px;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 185.343 185.343' style='enable-background:new 0 0 185.343 185.343;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath style='fill:%23fff;' d='M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175 l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934 c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");            cursor: pointer;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(50%);
+        }
+        &--right {
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $brandColor;
+            border-radius: 5px;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 185.343 185.343' style='enable-background:new 0 0 185.343 185.343;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath style='fill:%23fff;' d='M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175 l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934 c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");            cursor: pointer;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            // transform: translateX(-50%);
+            transform: rotate(180deg);
+        }
+    }
+    &__item {
+        &--text {
+            color: rgba(255, 255, 255, .7);
+            text-align: center;
+            height: 15rem;
+            font-size: 1.8rem;
+        }
+    }
+}
