@@ -409,3 +409,17 @@ body {
         }
     }
 }
+// ------------------------------------------------ FOOTER
+.footer {
+    height: 6rem;
+    background-color: #242424;
+    &__wrapper {
+        height: 6rem;
+        @include flexCenter;
+        justify-content: space-between;
+    }
+    &__rights {
+        @include linkClear;
+        color: #fff;
+    }
+}
