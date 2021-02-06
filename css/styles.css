@@ -866,3 +866,52 @@ body {
     padding: 1rem 2rem;
     width: 30%;
     text-align: center; }
+
+.justice {
+  height: 71rem;
+  background-color: #fff; }
+  .justice__wrap {
+    padding-top: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 61rem; }
+  .justice__text {
+    width: 48%;
+    font-family: 'Open Sans', sans-serif;
+    height: 51rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .justice__text--title {
+      font-size: 2.6rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .justice__text--desc {
+      font-size: 1.8rem;
+      font-weight: 400;
+      height: 30rem;
+      overflow: hidden; }
+    .justice__text--button {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #000;
+      text-decoration: none;
+      border: 1px solid #000;
+      padding: 1rem 2rem;
+      width: 30%;
+      text-align: center; }
+  .justice__img {
+    background-image: url(../img/sec-page/justice.png);
+    width: 50%;
+    height: 51rem; }
