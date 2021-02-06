@@ -554,6 +554,9 @@ body {
         @include linkClear;
         color: #fff;
     }
+    &__wrapper-sec {
+        justify-content: center;
+    }
 }
 // ----------------------------------------------- BANNER-SEC
 .banner-sec {
@@ -644,12 +647,18 @@ body {
         // outline: 2px solid red;
     }
 }
-// ------------------------------------------------------ BLOG
+// ------------------------------------------------------ BLOG-sec
 .news_blog {
     background-color: #f1f1f1;
 }
 
+// ------------------------------------------------------ CONTACTS-sec
 .contacts-sec {
     background-color: #fff;
     // color: #000;
+}
+
+// ------------------------------------------------------ FOOTER-sec
+.footer-sec {
+    background-color: #004066;
 }

@@ -925,6 +925,10 @@ body {
     color: #000;
     text-decoration: none;
     color: #fff; }
+  .footer__wrapper-sec {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 .banner-sec {
   height: 54.5rem;
@@ -1018,3 +1022,6 @@ body {
 
 .contacts-sec {
   background-color: #fff; }
+
+.footer-sec {
+  background-color: #004066; }
