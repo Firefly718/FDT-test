@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -412,6 +413,8 @@ body {
       color: #000;
       text-decoration: none;
       color: #0d2e69; }
+    .header__nav--item_black {
+      color: #000; }
 
 .banner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bg-main.png);
@@ -825,3 +828,41 @@ body {
     color: #000;
     text-decoration: none;
     color: #fff; }
+
+.banner-sec {
+  height: 54.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/sec-page/bg.png);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sec-page/bg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sec-page/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner-sec__wrap {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    width: 60%;
+    height: 54.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .banner-sec__title {
+    font-size: 4.1rem;
+    font-weight: 700; }
+  .banner-sec__subtitle {
+    font-size: 2.2rem;
+    margin: 1rem 0; }
+  .banner-sec__button {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    padding: 1rem 2rem;
+    width: 30%;
+    text-align: center; }

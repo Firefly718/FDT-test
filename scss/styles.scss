@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 
 @import 'normalize',
@@ -91,6 +92,9 @@ body {
         &--item {
             @include linkClear;
             color: $brandColor;
+        }
+        &--item_black {
+            color: #000;
         }
         // outline: 2px solid orange;
     }
@@ -427,5 +431,45 @@ body {
     &__rights {
         @include linkClear;
         color: #fff;
+    }
+}
+// ----------------------------------------------- BANNER-SEC
+.banner-sec {
+    height: 54.5rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../img/sec-page/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // outline: 2px solid red;
+    &__wrap {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        width: 60%;
+        height: 54.5rem;
+        // outline: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        font-size: 4.1rem;
+        font-weight: 700;    
+    }
+    &__subtitle {
+        font-size: 2.2rem;
+        margin: 1rem 0;
+    }
+    &__button {
+        font-size: 2.5rem;
+        font-weight: 600;
+        @include linkClear;
+        background: #fff;
+        padding: 1rem 2rem;
+        width: 30%;
+        text-align: center;
     }
 }
