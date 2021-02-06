@@ -725,6 +725,14 @@ body {
     text-align: center;
     padding: 7rem 1rem 8rem 1rem;
     text-transform: uppercase; }
+    .news__title--blog {
+      font-size: 2.6rem;
+      font-family: 'Open Sans', sans-serif;
+      color: #000; }
+      .news__title--blog::after {
+        content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ';
+        display: block;
+        font-size: 1.8rem; }
   .news__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -759,6 +767,33 @@ body {
       text-transform: uppercase;
       font-family: 'Roboto', sans-serif;
       font-weight: 700; }
+    .news__item--blog {
+      background-color: #fff; }
+    .news__item--img-blog {
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .news__item--img-blog-first {
+      background-image: url(../img/sec-page/blog-1.png); }
+    .news__item--img-blog-sec {
+      background-image: url(../img/sec-page/blog-2.png); }
+    .news__item--img-blog-third {
+      background-image: url(../img/sec-page/blog-3.png); }
+    .news__item--title-blog {
+      font-size: 1.8rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      text-transform: none;
+      padding: 0; }
+    .news__item--wrap {
+      padding: 1rem 2rem; }
+    .news__item--desc-blog {
+      font-size: 1.6rem;
+      color: #000;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400; }
+    .news__item--more-blog {
+      text-align: right;
+      font-size: 1.6rem; }
 
 .contacts {
   height: 22rem;
@@ -915,3 +950,6 @@ body {
     background-image: url(../img/sec-page/justice.png);
     width: 50%;
     height: 51rem; }
+
+.news_blog {
+  background-color: #f1f1f1; }

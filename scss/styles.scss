@@ -352,6 +352,16 @@ body {
         text-align: center;
         padding: 7rem 1rem 8rem 1rem;
         text-transform: uppercase;
+        &--blog {
+            font-size: 2.6rem;
+            font-family: 'Open Sans', sans-serif;
+            color: #000;
+            &::after {
+                content: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ';
+                display: block;
+                font-size: 1.8rem;
+            }
+        }
     }
     &__wrap {
         display: flex;
@@ -362,6 +372,8 @@ body {
         // outline: 2px solid red;
         height: 43rem;
         display: block;
+        // display: flex;
+        // flex-direction: column;
         @include linkClear;
         &--img {
             background-image: url(../img/pic.png);
@@ -383,6 +395,45 @@ body {
             text-transform: uppercase;
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
+        }
+        &--blog {
+            background-color: #fff;
+        }
+        &--img-blog {
+            background-repeat: no-repeat;
+            background-size: cover;
+            // background-size: 100% 150%;
+        }
+        &--img-blog-first {
+            background-image: url(../img/sec-page/blog-1.png);
+        }
+        &--img-blog-sec {
+            background-image: url(../img/sec-page/blog-2.png);
+        }
+        &--img-blog-third {
+            background-image: url(../img/sec-page/blog-3.png);
+        }
+        &--title-blog {
+            font-size: 1.8rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            text-transform: none;
+            padding: 0;
+        }
+        &--wrap {
+            padding: 1rem 2rem;
+            // height: 40%;
+        }
+        &--desc-blog {
+            font-size: 1.6rem;
+            color: #000;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        &--more-blog {
+            // outline: 2px solid red;
+            text-align: right;
+            font-size: 1.6rem;
         }
     }
 }
@@ -521,4 +572,8 @@ body {
         height: 51rem;
         // outline: 2px solid red;
     }
+}
+// ------------------------------------------------------ BLOG
+.news_blog {
+    background-color: #f1f1f1;
 }
