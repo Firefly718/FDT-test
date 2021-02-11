@@ -284,6 +284,9 @@ body {
         padding-top: 15rem;
         // margin-top: 15rem;
     }
+    &__wrap-fourth {
+        padding: 8rem 0;
+    }
     &__img {
         width: 48%;
         height: 90%;
@@ -1193,4 +1196,65 @@ body {
         text-align: center;
     }
 }
-// 84
+// ------------------------------------------- ABOUT-fourth
+.about-fourth {
+    height: 67.8rem;
+}
+// ------------------------------------------- SERVICES
+.services {
+    height: auto;
+    display: flex;
+    &__item {
+        width: 33.3%;
+        padding: 6rem 5rem;
+        background-color: #f7f3f4;
+        &:nth-child(2) {
+            width: 33.4%;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.7), 
+                rgba(0, 0, 0, 0.7)
+            ),
+            url(../img/sec-page/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            // color: #fff;
+        }
+        &--title {
+            font-size: 3rem;
+            color: #000;
+            margin: 0;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 4rem;
+        }
+        &--title-sec {
+            font-weight: 700;
+        }
+        &--title-center {
+            color: #fff;
+        }
+        &--desc {
+            font-size: 1.6rem;
+            color: #5f5f5f;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            margin-bottom: 5rem;
+        }
+        &--desc-center {
+            color: #fff;
+        }
+        &--button {
+            @include linkClear;
+            font-size: 1.5rem;
+            color: #1d75b7;
+            font-weight: 700;
+            font-family: "Lato", sans-serif;
+            // background-color: transparent;
+            // padding: 0;
+            // margin: 0;
+            // text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
