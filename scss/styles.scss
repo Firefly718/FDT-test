@@ -305,26 +305,75 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    @media screen and (max-width: 500px) {
+        height: auto;
+    }
     &__wrap {
         height: 86.2rem;
         // outline: 2px solid red;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: auto;
+            padding: 2rem 0;
+        }
     }
     &__title {
         font-family: 'Playfair Display', serif;
         width: 55rem;
+        @media screen and (max-width: 500px) {
+            // outline: 2px solid red;
+            width: 100%;
+            // padding-top: 1rem;
+            // margin-top: 5rem;
+        }
+        @media screen and (max-width: 450px) {
+            text-align: center;
+        }
         &--text {
             font-size: 3rem;
             font-weight: bold;
             line-height: 3rem;
+            @media screen and (max-width: 1100px) {
+                padding-right: 2rem;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 450px) {
+                padding: 0 1rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 1.2rem;
+            }
             &::after {
                 content: 'BURN INJURY LAWYER';
                 font-size: 5rem;
                 display: block;
                 line-height: 2.7rem;
                 margin-top: 1rem;
+                @media screen and (max-width: 1100px) {
+                    line-height: 5rem;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 2.5rem;
+                }
+                @media screen and (max-width: 320px) {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: 250px) {
+                    font-size: 1.9rem;
+                }
             }
         }
         &--button {
@@ -341,6 +390,30 @@ body {
             font-family: 'Roboto', sans-serif;
             margin-top: 3.5rem;
             text-align: center;
+            @media screen and (max-width: 800px) {
+                width: 60%;
+                height: auto;
+                font-size: 1.5rem;
+                // font-size: 1rem;
+                // padding: 1rem 2rem;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 1.3rem;
+                padding: 1rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 1.3rem;
+                margin: 3rem 0;
+            }
+            @media screen and (max-width: 450px) {
+                margin: 3rem auto;
+            }
+            @media screen and (max-width: 270px) {
+                width: 80%;
+            }
         }
     }
     &__form {
@@ -348,12 +421,58 @@ body {
         // outline: 2px solid yellow;
         background-color: $brandColor;
         padding: 4rem 3rem;
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            padding: 2rem;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 5rem;
+        }
         &--title {
             font-size: 2.8rem;
             // line-height: 4.8rem;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             text-transform: uppercase;
+            @media screen and (max-width: 1050px) {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            @media screen and (max-width: 940px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 770px) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 560px) {
+                font-size: 1.4rem;
+            }
+            @media screen and (max-width: 530px) {
+                font-size: 1.3rem;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width: 420px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 350px) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: 310px) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width: 280px) {
+                font-size: 1.4rem;
+            }
+            @media screen and (max-width: 250px) {
+                font-size: 1.3rem;
+            }
             &::after {
                 content: 'Fill out the form below for your free case evaluation';
                 display: block;
@@ -364,6 +483,24 @@ body {
                 // text-transform: lowercase;
                 text-transform: none;
                 margin-bottom: 4rem;
+                @media screen and (max-width: 940px) {
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1.8rem;
+                }
+                @media screen and (max-width: 350px) {
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: 280px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 250px) {
+                    font-size: 1.2rem;
+                }
             }
         }
         &--name {
@@ -394,6 +531,15 @@ body {
             line-height: 3rem;
             border: none;
             cursor: pointer;
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 500px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 300px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -1677,6 +1823,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-.banner, .about, .call, .comments, .news, .contacts, .footer {
+.about, .call, .comments, .news, .contacts, .footer {
     display: none;
 }

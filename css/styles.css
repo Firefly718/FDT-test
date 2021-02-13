@@ -647,6 +647,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff; }
+  @media screen and (max-width: 500px) {
+    .banner {
+      height: auto; } }
   .banner__wrap {
     height: 86.2rem;
     display: -webkit-box;
@@ -658,19 +661,67 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 500px) {
+      .banner__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        height: auto;
+        padding: 2rem 0; } }
   .banner__title {
     font-family: 'Playfair Display', serif;
     width: 55rem; }
+    @media screen and (max-width: 500px) {
+      .banner__title {
+        width: 100%; } }
+    @media screen and (max-width: 450px) {
+      .banner__title {
+        text-align: center; } }
     .banner__title--text {
       font-size: 3rem;
       font-weight: bold;
       line-height: 3rem; }
+      @media screen and (max-width: 1100px) {
+        .banner__title--text {
+          padding-right: 2rem; } }
+      @media screen and (max-width: 700px) {
+        .banner__title--text {
+          font-size: 2rem; } }
+      @media screen and (max-width: 400px) {
+        .banner__title--text {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 450px) {
+        .banner__title--text {
+          padding: 0 1rem; } }
+      @media screen and (max-width: 300px) {
+        .banner__title--text {
+          font-size: 1.2rem; } }
       .banner__title--text::after {
         content: 'BURN INJURY LAWYER';
         font-size: 5rem;
         display: block;
         line-height: 2.7rem;
         margin-top: 1rem; }
+        @media screen and (max-width: 1100px) {
+          .banner__title--text::after {
+            line-height: 5rem; } }
+        @media screen and (max-width: 700px) {
+          .banner__title--text::after {
+            font-size: 3rem;
+            line-height: 3.5rem; } }
+        @media screen and (max-width: 400px) {
+          .banner__title--text::after {
+            font-size: 2.5rem; } }
+        @media screen and (max-width: 320px) {
+          .banner__title--text::after {
+            font-size: 2rem; } }
+        @media screen and (max-width: 250px) {
+          .banner__title--text::after {
+            font-size: 1.9rem; } }
     .banner__title--button {
       display: block;
       width: 36rem;
@@ -686,15 +737,83 @@ body {
       font-family: 'Roboto', sans-serif;
       margin-top: 3.5rem;
       text-align: center; }
+      @media screen and (max-width: 800px) {
+        .banner__title--button {
+          width: 60%;
+          height: auto;
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 700px) {
+        .banner__title--button {
+          font-size: 1.3rem;
+          padding: 1rem; } }
+      @media screen and (max-width: 550px) {
+        .banner__title--button {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 500px) {
+        .banner__title--button {
+          font-size: 1.3rem;
+          margin: 3rem 0; } }
+      @media screen and (max-width: 450px) {
+        .banner__title--button {
+          margin: 3rem auto; } }
+      @media screen and (max-width: 270px) {
+        .banner__title--button {
+          width: 80%; } }
   .banner__form {
     width: 46rem;
     background-color: #0d2e69;
     padding: 4rem 3rem; }
+    @media screen and (max-width: 500px) {
+      .banner__form {
+        width: 100%; } }
+    @media screen and (max-width: 600px) {
+      .banner__form {
+        padding: 2rem; } }
+    @media screen and (max-width: 500px) {
+      .banner__form {
+        margin-top: 5rem; } }
     .banner__form--title {
       font-size: 2.8rem;
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       text-transform: uppercase; }
+      @media screen and (max-width: 1050px) {
+        .banner__form--title {
+          font-size: 2.5rem;
+          text-align: center; } }
+      @media screen and (max-width: 940px) {
+        .banner__form--title {
+          font-size: 2rem; } }
+      @media screen and (max-width: 770px) {
+        .banner__form--title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 700px) {
+        .banner__form--title {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 560px) {
+        .banner__form--title {
+          font-size: 1.4rem; } }
+      @media screen and (max-width: 530px) {
+        .banner__form--title {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 500px) {
+        .banner__form--title {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 420px) {
+        .banner__form--title {
+          font-size: 2rem; } }
+      @media screen and (max-width: 350px) {
+        .banner__form--title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 310px) {
+        .banner__form--title {
+          font-size: 1.6rem; } }
+      @media screen and (max-width: 280px) {
+        .banner__form--title {
+          font-size: 1.4rem; } }
+      @media screen and (max-width: 250px) {
+        .banner__form--title {
+          font-size: 1.3rem; } }
       .banner__form--title::after {
         content: 'Fill out the form below for your free case evaluation';
         display: block;
@@ -703,6 +822,24 @@ body {
         font-size: 1.8rem;
         text-transform: none;
         margin-bottom: 4rem; }
+        @media screen and (max-width: 940px) {
+          .banner__form--title::after {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 700px) {
+          .banner__form--title::after {
+            font-size: 1.3rem; } }
+        @media screen and (max-width: 500px) {
+          .banner__form--title::after {
+            font-size: 1.8rem; } }
+        @media screen and (max-width: 350px) {
+          .banner__form--title::after {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 280px) {
+          .banner__form--title::after {
+            font-size: 1.3rem; } }
+        @media screen and (max-width: 250px) {
+          .banner__form--title::after {
+            font-size: 1.2rem; } }
     .banner__form--name {
       border: 1px solid #fff;
       background-color: transparent;
@@ -799,6 +936,15 @@ body {
       line-height: 3rem;
       border: none;
       cursor: pointer; }
+      @media screen and (max-width: 600px) {
+        .banner__form--button {
+          width: 100%; } }
+      @media screen and (max-width: 500px) {
+        .banner__form--button {
+          width: 70%; } }
+      @media screen and (max-width: 300px) {
+        .banner__form--button {
+          width: 100%; } }
 
 .about {
   height: 74rem;
@@ -2045,5 +2191,5 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
         .burger__line::after {
           height: .4rem; } }
 
-.banner, .about, .call, .comments, .news, .contacts, .footer {
+.about, .call, .comments, .news, .contacts, .footer {
   display: none; }
