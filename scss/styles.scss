@@ -547,12 +547,19 @@ body {
 .about {
     height: 74rem;
     background-color: #fff;
+    @media screen and (max-width: 500px) {
+        height: auto;
+    }
     &__wrap {
         height: 74rem;
         display: flex;
         justify-content: space-between;
         padding-top: 15rem;
         // margin-top: 15rem;
+        @media screen and (max-width: 500px) {
+            height: auto;
+            padding: 8rem 0 4rem 0;
+        }
     }
     &__wrap-fourth {
         padding: 8rem 0;
@@ -563,9 +570,21 @@ body {
         background-image: url(../img/lawyer.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
     &__text {
         width: 48%;
+        @media screen and (max-width: 1050px) {
+            height: 90%;
+            overflow: hidden;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            padding: 0 1rem;
+        }
         &--title {
             font-family: 'Playfair Display', serif;
             font-size: 5rem;
@@ -573,6 +592,15 @@ body {
             text-transform: uppercase;
             line-height: 3rem;
             margin-bottom: 3.4rem;
+            @media screen and (max-width: 1100px) {
+                line-height: 3.5rem;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 4rem;
+            }
+            @media screen and (max-width: 500px) {
+                text-align: center;
+            }
         }
         &--title-fourth {
             font-size: 3rem;
@@ -593,6 +621,16 @@ body {
             color: #151515;
             font-weight: 250;
             margin-bottom: 5rem;
+            @media screen and (max-width: 1000px) {
+                overflow: hidden;
+                height: 58%;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 500px) {
+                height: 45%;
+            }
         }
         &--desc-fourth {
             font-size: 1.6rem;
@@ -608,6 +646,15 @@ body {
             text-transform: uppercase;
             margin-bottom: 2.7rem;
             color: #404040;
+            @media screen and (max-width: 600px) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: 500px) {
+                text-align: center;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 1.7rem;
+            }
         }
         &--button {
             @include linkClear;
@@ -620,6 +667,9 @@ body {
             display: block;
             text-align: center;
             padding: 1rem 0;
+            @media screen and (max-width: 500px) {
+                margin: 0 auto;
+            }
         }
         &--button-fourth {
             font-size: 1.5rem;
@@ -1823,6 +1873,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-.about, .call, .comments, .news, .contacts, .footer {
+.call, .comments, .news, .contacts, .footer {
     display: none;
 }
