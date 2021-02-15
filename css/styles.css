@@ -1112,10 +1112,27 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     text-transform: uppercase; }
+  .call__title {
+    text-align: center; }
+    @media screen and (max-width: 850px) {
+      .call__title {
+        font-size: 3.5rem; } }
+    @media screen and (max-width: 700px) {
+      .call__title {
+        font-size: 3rem; } }
+    @media screen and (max-width: 600px) {
+      .call__title {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 500px) {
+      .call__title {
+        font-size: 2rem; } }
   .call__tel {
     color: #000;
     text-decoration: none;
     color: #fff; }
+    @media screen and (max-width: 300px) {
+      .call__tel {
+        font-size: 3.5rem; } }
 
 .comments {
   height: 50rem;
@@ -1125,11 +1142,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff; }
+  @media screen and (max-width: 400px) {
+    .comments {
+      height: auto;
+      padding-bottom: 4rem; } }
   .comments__title {
     font-size: 5rem;
     font-family: 'Playfair Display' ,serif;
     text-align: center;
     padding: 9rem 1rem 7rem 1rem; }
+    @media screen and (max-width: 500px) {
+      .comments__title {
+        font-size: 4rem;
+        padding: 7rem 1rem 4rem 1rem; } }
+    @media screen and (max-width: 400px) {
+      .comments__title {
+        font-size: 3rem; } }
+    @media screen and (max-width: 300px) {
+      .comments__title {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 250px) {
+      .comments__title {
+        padding-top: 6rem; } }
   .comments__slider {
     width: 100%;
     height: 20rem; }
@@ -1171,7 +1205,9 @@ body {
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     height: 15rem;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    overflow: hidden;
+    padding: 0 1rem; }
 
 .news {
   height: 74rem;
@@ -2241,5 +2277,5 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
         .burger__line::after {
           height: .4rem; } }
 
-.call, .comments, .news, .contacts, .footer {
+.news, .contacts, .footer {
   display: none; }
