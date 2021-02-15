@@ -239,7 +239,7 @@ body {
             position: absolute;
             right: 0%;
             bottom: -36%;
-            // outline: 2px solid red;
+            outline: 2px solid red;
             background-color: #fff;
             padding: 1rem;
             border-left: 2px solid #4c4c4c;
@@ -2015,6 +2015,9 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     @media screen and (max-width: 400px) {
         border: 2px solid $brandColor;
     }
+    &_sec {
+        border: 2px solid $brandColor;
+    }
     &__line {
         width: 2.4rem;
         height: .5rem;
@@ -2057,4 +2060,8 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
             }
         }
     }
+}
+
+.banner-sec, .justice, .news, .contacts, .footer {
+    display: none;
 }

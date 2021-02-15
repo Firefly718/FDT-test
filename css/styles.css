@@ -589,6 +589,7 @@ body {
         position: absolute;
         right: 0%;
         bottom: -36%;
+        outline: 2px solid red;
         background-color: #fff;
         padding: 1rem;
         border-left: 2px solid #4c4c4c;
@@ -2397,6 +2398,8 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
   @media screen and (max-width: 400px) {
     .burger {
       border: 2px solid #0d2e69; } }
+  .burger_sec {
+    border: 2px solid #0d2e69; }
   .burger__line {
     width: 2.4rem;
     height: .5rem;
@@ -2429,3 +2432,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
       @media screen and (max-width: 400px) {
         .burger__line::after {
           height: .4rem; } }
+
+.banner-sec, .justice, .news, .contacts, .footer {
+  display: none; }

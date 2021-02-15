@@ -22,7 +22,7 @@ $(document).ready(function(){
   });
 });
 
-// burger
+// burger for main page
 $(document).ready(function(){
   // $("body > header > div > div > div > div.header__nav").hide();
 
@@ -31,3 +31,14 @@ $(document).ready(function(){
     $("body > header > div > div > div > div.header__nav").css('display', 'flex');
   });
 });
+
+// burger for second page
+$(document).ready(function(){
+  $("#burger-sec").click(function(){
+    $("#nav-sec").toggle('slow', 'swing');
+    $("#nav-sec").css('display', 'flex');
+    console.log('click');
+  });
+});
+
+document.querySelector("#burger-sec")
