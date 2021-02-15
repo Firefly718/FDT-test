@@ -1662,6 +1662,9 @@ body {
 .justice {
   height: 71rem;
   background-color: #fff; }
+  @media screen and (max-width: 500px) {
+    .justice {
+      height: auto; } }
   .justice__wrap {
     padding-top: 10rem;
     display: -webkit-box;
@@ -1671,6 +1674,9 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 61rem; }
+    @media screen and (max-width: 500px) {
+      .justice__wrap {
+        padding-top: 6rem; } }
   .justice__text {
     width: 48%;
     font-family: 'Open Sans', sans-serif;
@@ -1685,15 +1691,53 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 500px) {
+      .justice__text {
+        width: 100%;
+        padding: 0 1rem;
+        height: auto; } }
     .justice__text--title {
       font-size: 2.6rem;
       font-weight: 600;
       text-transform: uppercase; }
+      @media screen and (max-width: 900px) {
+        .justice__text--title {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 800px) {
+        .justice__text--title {
+          font-size: 2rem; } }
+      @media screen and (max-width: 600px) {
+        .justice__text--title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 500px) {
+        .justice__text--title {
+          font-size: 2.6rem; } }
+      @media screen and (max-width: 450px) {
+        .justice__text--title {
+          font-size: 2rem;
+          text-align: center; } }
+      @media screen and (max-width: 350px) {
+        .justice__text--title {
+          font-size: 1.8rem; } }
     .justice__text--desc {
       font-size: 1.8rem;
       font-weight: 400;
       height: 30rem;
       overflow: hidden; }
+      @media screen and (max-width: 900px) {
+        .justice__text--desc {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 610px) {
+        .justice__text--desc {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 500px) {
+        .justice__text--desc {
+          font-size: 1.5rem; } }
+      @media screen and (max-width: 350px) {
+        .justice__text--desc {
+          font-size: 1.3rem;
+          height: auto;
+          margin: 1rem 0; } }
     .justice__text--button {
       font-size: 2rem;
       font-weight: 600;
@@ -1703,10 +1747,22 @@ body {
       padding: 1rem 2rem;
       width: 30%;
       text-align: center; }
+      @media screen and (max-width: 1100px) {
+        .justice__text--button {
+          width: 40%; } }
+      @media screen and (max-width: 850px) {
+        .justice__text--button {
+          width: 60%; } }
+      @media screen and (max-width: 550px) {
+        .justice__text--button {
+          width: 100%; } }
   .justice__img {
     background-image: url(../img/sec-page/justice.png);
     width: 50%;
     height: 51rem; }
+    @media screen and (max-width: 500px) {
+      .justice__img {
+        display: none; } }
 
 .news_blog {
   background-color: #f1f1f1; }
@@ -2478,5 +2534,5 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
         .burger__line::after {
           height: .4rem; } }
 
-.justice, .news, .contacts, .footer {
+.news, .contacts, .footer {
   display: none; }
