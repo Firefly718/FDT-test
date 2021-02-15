@@ -1025,6 +1025,14 @@ body {
             // justify-content: flex-start;
         }
     }
+    &__wrap_footer {
+        @media screen and (max-width: 750px) {
+            align-items: flex-start;
+        }
+        @media screen and (max-width: 350px) {
+            align-items: flex-end;
+        }
+    }
     &__item {
         @include linkClear;
         color: #fff;
@@ -1131,17 +1139,39 @@ body {
 .footer {
     height: 6rem;
     background-color: #242424;
+    @media screen and (max-width: 750px) {
+        height: auto;
+        padding: 3rem 1rem 1rem 1rem;
+    }
     &__wrapper {
         height: 6rem;
         @include flexCenter;
         justify-content: space-between;
+        @media screen and (max-width: 750px) {
+            height: auto;
+            align-items: flex-end;
+        }
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 3rem;
+        }
+        @media screen and (max-width: 350px) {
+            align-items: flex-end;
+        }
     }
     &__rights {
         @include linkClear;
         color: #fff;
+        @media screen and (max-width: 300px) {
+            // outline: 2px solid red;
+            text-align: center;
+            font-size: 1.3rem;
+        }
     }
     &__wrapper-sec {
         justify-content: center;
+        // outline: 2px solid red;
     }
 }
 // ----------------------------------------------- BANNER-SEC
@@ -2027,8 +2057,4 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
             }
         }
     }
-}
-
-.footer {
-    display: none;
 }
