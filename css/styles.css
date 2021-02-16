@@ -1981,10 +1981,16 @@ body {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  margin: 25% 10% 0 auto; }
-  @media screen and (max-width: 1205px) {
+  margin: 20% 10% 0 auto; }
+  @media screen and (max-width: 1500px) {
     .slick-dots {
       margin-top: 20%; } }
+  @media screen and (max-width: 1450px) {
+    .slick-dots {
+      margin-top: 10%; } }
+  @media screen and (max-width: 1205px) {
+    .slick-dots {
+      margin-top: 10%; } }
   @media screen and (max-width: 500px) {
     .slick-dots {
       margin: 15% 5% 5% auto; } }
@@ -2010,6 +2016,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 500px) {
+    .schedule {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .schedule__wrapper {
     width: 50%;
     background-color: #f4762a;
@@ -2023,9 +2035,23 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 700px) {
+      .schedule__wrapper {
+        width: 30%; } }
+    @media screen and (max-width: 500px) {
+      .schedule__wrapper {
+        width: 100%; } }
     .schedule__wrapper_sec {
       width: 50%;
-      background-color: #f6f6f6; }
+      background-color: #f6f6f6;
+      padding: 4rem 4rem; }
+      @media screen and (max-width: 700px) {
+        .schedule__wrapper_sec {
+          width: 70%; } }
+      @media screen and (max-width: 500px) {
+        .schedule__wrapper_sec {
+          width: 100%;
+          padding: 4rem 2rem; } }
   .schedule__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2036,19 +2062,58 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 61rem; }
+    width: 61rem;
+    padding: 0 1rem; }
+    @media screen and (max-width: 700px) {
+      .schedule__form {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 500px) {
+      .schedule__form {
+        padding: 4rem 2rem;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
     .schedule__form--title {
       font-size: 3.6rem;
       color: #fff;
       text-transform: capitalize;
       font-weight: 700;
       font-family: 'Roboto', sans-serif; }
+      @media screen and (max-width: 800px) {
+        .schedule__form--title {
+          font-size: 3rem; } }
+      @media screen and (max-width: 700px) {
+        .schedule__form--title {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 600px) {
+        .schedule__form--title {
+          font-size: 2rem;
+          padding: 0 1rem; } }
+      @media screen and (max-width: 500px) {
+        .schedule__form--title {
+          text-align: center;
+          width: 100%; } }
     .schedule__form--field {
       background-color: #f9b186;
       border: none;
       padding: 1rem 2rem;
-      width: 30rem;
-      height: 5rem; }
+      height: 5rem;
+      width: 49%; }
+      @media screen and (max-width: 800px) {
+        .schedule__form--field {
+          width: 100%; } }
+      @media screen and (max-width: 700px) {
+        .schedule__form--field {
+          padding: 0 1rem; } }
+      @media screen and (max-width: 600px) {
+        .schedule__form--field {
+          width: 90%;
+          margin: 0 auto;
+          height: 4rem; } }
+      @media screen and (max-width: 500px) {
+        .schedule__form--field {
+          margin: 0;
+          width: 100%; } }
       .schedule__form--field::-webkit-input-placeholder {
         color: #fff;
         text-transform: uppercase;
@@ -2079,52 +2144,103 @@ body {
         font-weight: 500;
         font-size: 1.6rem;
         font-family: 'Roboto', sans-serif; }
+        @media screen and (max-width: 700px) {
+          .schedule__form--field::-webkit-input-placeholder {
+            font-size: 1.2rem; }
+          .schedule__form--field::-moz-placeholder {
+            font-size: 1.2rem; }
+          .schedule__form--field:-ms-input-placeholder {
+            font-size: 1.2rem; }
+          .schedule__form--field::-ms-input-placeholder {
+            font-size: 1.2rem; }
+          .schedule__form--field::placeholder {
+            font-size: 1.2rem; } }
     .schedule__form--button {
       background-color: #fff;
       border: none;
-      width: 30rem;
       color: #f4762a;
       font-weight: 500;
       font-family: 'Roboto', sans-serif;
       padding: 1rem;
       cursor: pointer;
-      margin-left: auto; }
-  .schedule__info--title {
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    width: 61rem;
-    margin-bottom: 5rem; }
-  .schedule__info--desc {
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-    width: 36rem;
-    margin-bottom: 2.5rem; }
-  .schedule__info--more {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    color: #000;
-    text-decoration: none;
-    color: #f4762a;
-    border: 2px solid #f4762a;
-    padding: 1rem 4rem;
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    text-transform: capitalize;
+      margin-left: auto;
+      width: 49%; }
+      @media screen and (max-width: 800px) {
+        .schedule__form--button {
+          width: 100%; } }
+      @media screen and (max-width: 700px) {
+        .schedule__form--button {
+          font-size: 2rem; } }
+      @media screen and (max-width: 600px) {
+        .schedule__form--button {
+          width: 90%;
+          margin: 0 auto;
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 500px) {
+        .schedule__form--button {
+          width: 100%; } }
+  .schedule__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    .schedule__info--title {
+      font-size: 3rem;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      width: 100%;
+      margin-bottom: 5rem; }
+      @media screen and (max-width: 800px) {
+        .schedule__info--title {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 300px) {
+        .schedule__info--title {
+          font-size: 2rem; } }
+    .schedule__info--desc {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+      color: #666;
+      width: 100%;
+      margin-bottom: 2.5rem; }
+    .schedule__info--more {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      color: #000;
+      text-decoration: none;
+      color: #f4762a;
+      border: 2px solid #f4762a;
+      padding: 1rem 4rem;
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      text-transform: capitalize;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      @media screen and (max-width: 700px) {
+        .schedule__info--more {
+          margin-left: auto; } }
+      @media screen and (max-width: 500px) {
+        .schedule__info--more {
+          margin: 0 auto; } }
+      @media screen and (max-width: 300px) {
+        .schedule__info--more {
+          padding: 1rem 2rem;
+          width: 100%;
+          margin-top: 2rem; } }
 
 .about-third {
   height: 112.5rem;
@@ -2687,5 +2803,5 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     .burger__line-third::after {
       background-color: #000; }
 
-.schedule, .about-third, .footer-third {
+.about-third, .footer-third {
   display: none; }
