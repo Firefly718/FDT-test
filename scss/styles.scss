@@ -2196,16 +2196,39 @@ body {
 .preheader {
     height: 6rem;
     background-color: #000;
+    width: 100%;
+    @media screen and (max-width: 450px) {
+        height: auto;
+    }
     &__wrap {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         height: 6rem;
+        width: 100%;
+        outline: 2px solid red;
+        @media screen and (max-width: 600px) {
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 450px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+            height: auto;
+            row-gap: 1rem;
+        }
     }
     &__link {
         margin-left: 3rem;
         @include linkClear;
         color: #fff;
+        @media screen and (max-width: 450px) {
+            width: 100%;
+            margin: 0;
+        }
+        @media screen and (max-width: 300px) {
+            font-size: 1.3rem;
+        }
         &--phone {
             display: flex;
             align-items: center;
@@ -2562,6 +2585,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-// .footer-third  {
-//     display: none;
-// }
+.banner-fourth, .about, .services, .form-fourth, .footer-third {
+    display: none;
+}
