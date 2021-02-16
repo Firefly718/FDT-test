@@ -377,6 +377,15 @@ body {
       -ms-flex-align: start;
       align-items: flex-start;
       padding-top: 4rem; }
+      @media screen and (max-width: 500px) {
+        .header__wrap--third {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 0; } }
+      @media screen and (max-width: 400px) {
+        .header__wrap--third {
+          row-gap: 3rem; } }
   .header__wrap-sec {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -426,6 +435,13 @@ body {
       width: -webkit-min-content;
       width: -moz-min-content;
       width: min-content; }
+      @media screen and (max-width: 300px) {
+        .header__logo--third {
+          width: 100%;
+          padding-left: 1rem;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; } }
     .header__logo--fourth {
       color: #1d75b7;
       width: -webkit-min-content;
@@ -482,6 +498,9 @@ body {
       justify-content: space-evenly;
       font-weight: bold;
       text-transform: none; }
+      @media screen and (max-width: 800px) {
+        .header__menu--third {
+          display: none; } }
   @media screen and (max-width: 400px) {
     .header__menu-sec {
       display: none; } }
@@ -564,6 +583,9 @@ body {
           font-size: 1.5rem; } }
     .header__phone--num-third {
       color: #000; }
+      @media screen and (max-width: 900px) {
+        .header__phone--num-third {
+          font-size: 2.5rem; } }
   .header__phone-third {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -571,6 +593,22 @@ body {
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content; }
+    @media screen and (max-width: 800px) {
+      .header__phone-third {
+        margin: 0; } }
+    @media screen and (max-width: 500px) {
+      .header__phone-third {
+        row-gap: 1rem; } }
+    @media screen and (max-width: 400px) {
+      .header__phone-third {
+        row-gap: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
     .header__phone-third::before {
       content: '';
       width: 3.4rem;
@@ -580,6 +618,9 @@ body {
       background-size: contain;
       background-image: url(../img/third-page/phone-icon.png);
       margin-right: 2rem; }
+      @media screen and (max-width: 900px) {
+        .header__phone-third::before {
+          margin-right: 1rem; } }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1827,7 +1868,7 @@ body {
   background-color: #004066; }
 
 .banner-third {
-  height: 80rem;
+  height: auto;
   background-image: url(../img/third-page/justice.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1843,15 +1884,31 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: 80rem; }
+    @media screen and (max-width: 500px) {
+      .banner-third__wrap {
+        height: auto; } }
   .banner-third__slider {
     width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     height: 80rem; }
+    @media screen and (max-width: 700px) {
+      .banner-third__slider {
+        width: 70%; } }
+    @media screen and (max-width: 500px) {
+      .banner-third__slider {
+        width: 100%;
+        height: auto; } }
   .banner-third__text {
     color: #fff;
     padding: 25rem 6rem 0 6rem;
     width: 70%;
     height: auto; }
+    @media screen and (max-width: 500px) {
+      .banner-third__text {
+        padding: 10rem 2rem 0 2rem; } }
+    @media screen and (max-width: 300px) {
+      .banner-third__text {
+        padding: 5rem 2rem 0 2rem; } }
     .banner-third__text--title {
       font-size: 8.2rem;
       font-weight: 700;
@@ -1859,12 +1916,27 @@ body {
       line-height: 8rem;
       text-transform: uppercase;
       width: 90%; }
+      @media screen and (max-width: 500px) {
+        .banner-third__text--title {
+          font-size: 4rem;
+          line-height: 4rem; } }
+      @media screen and (max-width: 300px) {
+        .banner-third__text--title {
+          font-size: 2.7rem; } }
     .banner-third__text--subtitle {
       font-size: 3rem;
       font-weight: 400;
       font-family: 'Lato', sans-serif;
       margin-bottom: 4rem;
-      width: 90%; }
+      width: 90%;
+      overflow: hidden;
+      height: 18rem; }
+      @media screen and (max-width: 500px) {
+        .banner-third__text--subtitle {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 300px) {
+        .banner-third__text--subtitle {
+          font-size: 2rem; } }
     .banner-third__text--button {
       font-size: 2rem;
       font-weight: 700;
@@ -1888,6 +1960,9 @@ body {
       height: -moz-min-content;
       height: min-content;
       padding: 1rem 0; }
+      @media screen and (max-width: 300px) {
+        .banner-third__text--button {
+          margin: 0 auto; } }
 
 .slick-dots {
   list-style: none;
@@ -1907,6 +1982,15 @@ body {
   width: -moz-min-content;
   width: min-content;
   margin: 25% 10% 0 auto; }
+  @media screen and (max-width: 1205px) {
+    .slick-dots {
+      margin-top: 20%; } }
+  @media screen and (max-width: 500px) {
+    .slick-dots {
+      margin: 15% 5% 5% auto; } }
+  @media screen and (max-width: 300px) {
+    .slick-dots {
+      margin: 20% auto 5% auto; } }
 
 .slick-dots button {
   background: #565d69;
@@ -2554,6 +2638,16 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     border: 2px solid #0d2e69;
     height: 3.4rem;
     width: 3.4rem; }
+  @media screen and (max-width: 800px) {
+    .burger_third {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border: 4px solid #000; } }
+  @media screen and (max-width: 300px) {
+    .burger_third {
+      width: 95%;
+      justify-self: flex-end; } }
   .burger__line {
     width: 2.4rem;
     height: .5rem;
@@ -2586,3 +2680,12 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
       @media screen and (max-width: 400px) {
         .burger__line::after {
           height: .4rem; } }
+  .burger__line-third {
+    background-color: #000; }
+    .burger__line-third::before {
+      background-color: #000; }
+    .burger__line-third::after {
+      background-color: #000; }
+
+.schedule, .about-third, .footer-third {
+  display: none; }
