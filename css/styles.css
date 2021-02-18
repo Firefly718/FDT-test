@@ -1164,14 +1164,22 @@ body {
       margin-bottom: 5rem; }
       @media screen and (max-width: 1000px) {
         .about__text--desc {
+          height: 58%;
+          width: 100%;
           overflow: hidden;
-          height: 58%; } }
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 11;
+          -webkit-box-orient: vertical; } }
       @media screen and (max-width: 600px) {
         .about__text--desc {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem;
+          -webkit-line-clamp: 13; } }
       @media screen and (max-width: 500px) {
         .about__text--desc {
-          height: 45%; } }
+          height: 45%;
+          -webkit-line-clamp: 9; } }
     .about__text--desc-fourth {
       font-size: 1.6rem;
       color: #5f5f5f;
@@ -1353,6 +1361,16 @@ body {
     font-size: 1.8rem;
     overflow: hidden;
     padding: 0 1rem; }
+    @media screen and (max-width: 550px) {
+      .comments__item--text {
+        width: 100%;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        line-height: 2.5rem; } }
 
 .news {
   height: auto;

@@ -756,14 +756,21 @@ body {
             font-weight: 250;
             margin-bottom: 5rem;
             @media screen and (max-width: 1000px) {
-                overflow: hidden;
                 height: 58%;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 11;
+                -webkit-box-orient: vertical;
             }
             @media screen and (max-width: 600px) {
                 font-size: 1.5rem;
+                -webkit-line-clamp: 13;
             }
             @media screen and (max-width: 500px) {
                 height: 45%;
+                -webkit-line-clamp: 9;
             }
         }
         &--desc-fourth {
@@ -945,6 +952,15 @@ body {
             font-size: 1.8rem;
             overflow: hidden;
             padding: 0 1rem;
+            @media screen and (max-width: 550px) {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                line-height: 2.5rem;
+            }
         }
     }
 }
