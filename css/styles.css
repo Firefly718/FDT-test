@@ -1186,6 +1186,10 @@ body {
       font-weight: 400;
       font-family: 'Lato', sans-serif;
       margin-bottom: 4.5rem; }
+      @media screen and (max-width: 900px) {
+        .about__text--desc-fourth {
+          height: 45%;
+          -webkit-line-clamp: 9; } }
     .about__text--subtitle {
       font-size: 2.1rem;
       color: #404040;
@@ -3019,7 +3023,15 @@ body {
       margin-bottom: 5rem;
       height: 25rem;
       overflow: hidden;
-      line-height: 2.5rem; }
+      line-height: 2.5rem;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical; }
       @media screen and (max-width: 950px) {
         .services__item--desc {
           font-size: 1.4rem; } }
