@@ -1966,6 +1966,12 @@ body {
     }
     &_fourth {
         background-color: #1c1c1c;
+        @media screen and (max-width: 700px) {
+            padding-top: 10rem;
+        }
+        @media screen and (max-width: 400px) {
+            padding-top: 5rem;
+        }
     }
     &__wrap {
         display: flex;
@@ -2648,6 +2654,80 @@ body {
     }
 }
 
+// 4th page → footer → items-wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts {
+    @media screen and (max-width: 1000px) {
+        column-gap: 10rem;
+    }
+    @media screen and (max-width: 850px) {
+        column-gap: 5rem;
+    }
+    @media screen and (max-width: 700px) {
+        // justify-content: space-between;
+        column-gap: 0;
+    }
+}
+
+// 4th page → footer → "LOGO" → wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(1) {
+    @media screen and (max-width: 1000px) {
+        margin-right: 0;
+    }
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+// 4th page → footer → "LOGO" → desc-wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(1) > div.footer-third__item--desc.footer-third__item--desc-fourth {
+    @media screen and (max-width: 700px) {
+        height: auto;
+    }
+}
+
+// 4th page → footer → "QUICK LINKS" → wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(2) {
+    // outline: 2px solid red;
+    @media screen and (max-width: 1050px) {
+        width: 30%;
+    }
+    @media screen and (max-width: 1000px) {
+        margin-right: 0;
+    }
+    @media screen and (max-width: 750px) {
+        width: 49%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 400px) {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+// 4th page → footer → "CONTACT ME" → wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(3) {
+    @media screen and (max-width: 750px) {
+        width: 49%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 40%;
+    }
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+// 4th page → footer → "CONTACT ME" → desc-wrapper ↓
+body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(3) > div.footer-third__item--desc {
+    @media screen and (max-width: 700px) {
+        height: auto;
+    }
+}
+
+
 // fourth page → footer → "quick links" → link 1 ↓
 body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(2) > div.footer-third__item--wrapper > a:nth-child(1) {
     color: #fff;
@@ -2659,14 +2739,29 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     color: #fff;
 }
 
-// fourth page → footer → "quick links" ↓
+// fourth page → footer → "quick links" → title ↓
 body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(2) > div.footer-third__item--title.footer-third__item--title-sec {
     margin-bottom: 6.2rem;
+    @media screen and (max-width: 700px) {
+        margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+        margin-bottom: 2rem;
+    }
 }
 
-// fourth page → footer → "contact me" ↓
+// fourth page → footer → "contact me" → title ↓
 body > div.footer-third.footer-third_fourth > div > div > div.footer-third__contacts > div:nth-child(3) > div.footer-third__item--title {
     margin-bottom: 6.2rem;
+    @media screen and (max-width: 700px) {
+        margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+    }
 }
 
 // fourth page → footer → "contact me" → link 1 (phone) ↓
@@ -2808,6 +2903,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-.footer-third {
-    display: none;
-}
+// .footer-third {
+//     display: none;
+// }
