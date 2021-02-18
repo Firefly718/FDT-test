@@ -671,12 +671,24 @@ body {
             font-weight: 400;
             font-family: 'Lato', sans-serif;
             margin-bottom: 6rem;
+            @media screen and (max-width: 500px) {
+                margin-bottom: 4rem;
+            }
+            @media screen and (max-width: 400px) {
+                margin-bottom: 3rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 2.5rem;
+            }
         }
         &--title-fourth-two {
             font-size: 3rem;
             color: #000;
             font-weight: 700;
             font-family: 'Lato', sans-serif;
+            @media screen and (max-width: 300px) {
+                font-size: 2.5rem;
+            }
         }
         &--desc {
             font-family: 'Roboto', sans-serif;
@@ -750,6 +762,9 @@ body {
         flex-direction: column;
         justify-content: center;
         height: 90%;
+        @media screen and (max-width: 400px) {
+            padding: 0 2rem;
+        }
     }
 }
 // ------------------------------------------------ CALL
@@ -2349,6 +2364,9 @@ body {
 // ------------------------------------------- ABOUT-fourth
 .about-fourth {
     height: 67.8rem;
+    @media screen and (max-width: 500px) {
+        height: auto;
+    }
 }
 // ------------------------------------------- SERVICES
 .services {
@@ -2646,6 +2664,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-.about, .services, .form-fourth, .footer-third {
+.services, .form-fourth, .footer-third {
     display: none;
 }

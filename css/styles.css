@@ -1074,11 +1074,23 @@ body {
       font-weight: 400;
       font-family: 'Lato', sans-serif;
       margin-bottom: 6rem; }
+      @media screen and (max-width: 500px) {
+        .about__text--title-fourth {
+          margin-bottom: 4rem; } }
+      @media screen and (max-width: 400px) {
+        .about__text--title-fourth {
+          margin-bottom: 3rem; } }
+      @media screen and (max-width: 300px) {
+        .about__text--title-fourth {
+          font-size: 2.5rem; } }
     .about__text--title-fourth-two {
       font-size: 3rem;
       color: #000;
       font-weight: 700;
       font-family: 'Lato', sans-serif; }
+      @media screen and (max-width: 300px) {
+        .about__text--title-fourth-two {
+          font-size: 2.5rem; } }
     .about__text--desc {
       font-family: 'Roboto', sans-serif;
       font-size: 1.8rem;
@@ -1153,6 +1165,9 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     height: 90%; }
+    @media screen and (max-width: 400px) {
+      .about__text-fourth {
+        padding: 0 2rem; } }
 
 .call {
   background-color: #0d2e69;
@@ -2772,6 +2787,9 @@ body {
 
 .about-fourth {
   height: 67.8rem; }
+  @media screen and (max-width: 500px) {
+    .about-fourth {
+      height: auto; } }
 
 .services {
   height: auto;
@@ -3055,5 +3073,5 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     .burger__line-fourth::after {
       background-color: #1d75b7; }
 
-.about, .services, .form-fourth, .footer-third {
+.services, .form-fourth, .footer-third {
   display: none; }
