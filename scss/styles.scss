@@ -1110,6 +1110,13 @@ body {
             font-weight: 250;
             color: #404040;
             // outline: 2px dashed green;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-height: 2.5rem;
         }
         &--more {
             font-size: 1.8rem;

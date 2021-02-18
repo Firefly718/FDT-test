@@ -1511,7 +1511,15 @@ body {
       font-size: 1.8rem;
       font-family: 'Roboto', sans-serif;
       font-weight: 250;
-      color: #404040; }
+      color: #404040;
+      width: 100%;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-height: 2.5rem; }
     .news__item--more {
       font-size: 1.8rem;
       color: #0d2e69;
