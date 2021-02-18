@@ -188,13 +188,13 @@ body {
     }
     &__menu-sec {
         @media screen and (max-width: 400px) {
-            outline: 2px solid red;
+            // outline: 2px solid red;
             width: 0%;
         }
     }
     &__menu-fourth {
         @media screen and (max-width: 800px) {
-            display: none;
+            width: 0%;
             // outline: 2px solid red;
         }
     }
@@ -364,6 +364,9 @@ body {
             &:active {
                 color: #1d75b7;
             }
+            @media screen and (max-width: 800px) {
+                color: #1d75b7;
+            }
         }
         // outline: 2px solid orange;
     }
@@ -384,6 +387,30 @@ body {
         // outline: 2px solid red;
         @media screen and (max-width: 800px) {
             display: none;
+            position: absolute;
+            bottom: 47%;
+            right: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #1d75b7;
+            justify-content: space-evenly;
+            padding: 1rem 0;
+            border-bottom: 4px solid #1d75b7;
+            border-top: 4px solid #1d75b7;
+        }
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 2.5rem;
+            bottom: 4%;
+            row-gap: 1.5rem;
+            width: max-content;
+            border-left: 5px solid #1d75b7;
+            border-bottom: none;
+            border-top: none;
+        }
+        @media screen and (max-width: 300px) {
+            bottom: 8%;
         }
     }
 }
