@@ -2372,10 +2372,19 @@ body {
 .services {
     height: auto;
     display: flex;
+    @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+    }
     &__item {
         width: 33.3%;
         padding: 4rem 5rem;
         background-color: #f7f3f4;
+        &:first-child {
+            @media screen and (max-width: 500px) {
+                order: 1;
+                width: 100%;
+            }
+        }
         &:nth-child(2) {
             width: 33.4%;
             background: linear-gradient(
@@ -2386,6 +2395,25 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             // color: #fff;
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                order: -1;
+            }
+            @media screen and (max-width: 500px) {
+                order: 2;
+            }
+        }
+        &:last-child {
+            @media screen and (max-width: 500px) {
+                order: 3;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 1060px) {
+            padding: 2rem 3rem;
+        }
+        @media screen and (max-width: 800px) {
+            width: 50%;
         }
         &--title {
             font-size: 3rem;
@@ -2395,12 +2423,57 @@ body {
             font-family: 'Lato', sans-serif;
             text-transform: uppercase;
             margin-bottom: 4rem;
+            @media screen and (max-width: 1250px) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width: 950px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 750px) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 2.3rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 1.7rem;
+            }
         }
         &--title-sec {
             font-weight: 700;
         }
         &--title-center {
             color: #fff;
+            @media screen and (max-width: 800px) {
+                text-align: center;
+            }
+            @media screen and (max-width: 750px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: 500px) {
+                text-align: left;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 2.3rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 1.7rem;
+            }
         }
         &--desc {
             font-size: 1.6rem;
@@ -2408,6 +2481,18 @@ body {
             font-weight: 400;
             font-family: 'Lato', sans-serif;
             margin-bottom: 5rem;
+            height: 25rem;
+            overflow: hidden;
+            line-height: 2.5rem;
+            @media screen and (max-width: 950px) {
+                font-size: 1.4rem;
+            }
+            @media screen and (max-width: 800px) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width: 300px) {
+                margin-bottom: 3rem;
+            }
         }
         &--desc-center {
             color: #fff;
@@ -2664,6 +2749,6 @@ body > div.footer-third.footer-third_fourth > div > div > div.footer-third__cont
     }
 }
 
-.services, .form-fourth, .footer-third {
+.form-fourth, .footer-third {
     display: none;
 }
