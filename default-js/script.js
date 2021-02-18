@@ -21,13 +21,3 @@ $(document).ready(function(){
     nextArrow: '<div class="comments__slider--right"></div>'
   });
 });
-
-// burger for main page
-$(document).ready(function(){
-  // $("body > header > div > div > div > div.header__nav").hide();
-
-  $("body > header > div > div > div > div.burger").click(function(){
-    $("body > header > div > div > div > div.header__nav").toggle('slow', 'swing');
-    $("body > header > div > div > div > div.header__nav").css('display', 'flex');
-  });
-});

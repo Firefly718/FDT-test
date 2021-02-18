@@ -171,12 +171,14 @@ body {
     }
     &__menu-sec {
         @media screen and (max-width: 400px) {
-            display: none;
+            outline: 2px solid red;
+            width: 0%;
         }
     }
     &__menu-fourth {
         @media screen and (max-width: 800px) {
             display: none;
+            // outline: 2px solid red;
         }
     }
     &__phone {
@@ -347,6 +349,19 @@ body {
             }
         }
         // outline: 2px solid orange;
+    }
+    &__nav-sec {
+        // outline: 2px solid red;
+        // background-color: red;
+        @media screen and (max-width: 600px) {
+            border-left: none;
+            border-bottom: none;
+            bottom: -34%;
+        }
+        @media screen and (max-width: 400px) {
+            bottom: -420%;
+            // height: auto;
+        }
     }
     &__nav-fourth {
         // outline: 2px solid red;
