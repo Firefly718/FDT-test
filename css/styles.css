@@ -2051,9 +2051,20 @@ body {
       margin-bottom: 4rem;
       width: 90%;
       overflow: hidden;
-      height: 18rem; }
+      height: 18rem;
+      line-height: 5rem; }
+      @media screen and (max-width: 900px) {
+        .banner-third__text--subtitle {
+          line-height: 4.4rem;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical; } }
       @media screen and (max-width: 500px) {
         .banner-third__text--subtitle {
+          line-height: 2.5rem;
           font-size: 2.5rem; } }
       @media screen and (max-width: 300px) {
         .banner-third__text--subtitle {
@@ -2411,7 +2422,13 @@ body {
       overflow: hidden; }
       @media screen and (max-width: 1050px) {
         .about-third__about--desc {
-          line-height: 2rem; } }
+          line-height: 2rem;
+          overflow: hidden;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 15;
+          -webkit-box-orient: vertical; } }
       @media screen and (max-width: 500px) {
         .about-third__about--desc {
           margin: 3rem 0; } }
