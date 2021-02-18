@@ -510,7 +510,28 @@ body {
       text-transform: none; }
       @media screen and (max-width: 800px) {
         .header__menu--third {
-          display: none; } }
+          display: none;
+          position: absolute;
+          bottom: -34%;
+          left: 0;
+          width: 100%;
+          background-color: #fff;
+          z-index: 999;
+          padding: 1rem 0; } }
+      @media screen and (max-width: 400px) {
+        .header__menu--third {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          row-gap: 2rem;
+          bottom: -138%; } }
+      @media screen and (max-width: 300px) {
+        .header__menu--third {
+          -webkit-box-align: end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          padding: 1rem 2rem; } }
   @media screen and (max-width: 400px) {
     .header__menu-sec {
       outline: 2px solid red;
